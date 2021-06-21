@@ -1,0 +1,11 @@
+name: Test GitHub Actions
+on:
+  - push
+jobs:
+  Example-Job-1:
+    runs-on: ubuntu-20.04
+    steps:
+      - name: Say Hello
+        run: echo "Hello World!"
+      - name: List Files
+        run: ls -la
