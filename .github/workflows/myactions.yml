@@ -5,21 +5,11 @@ jobs:
   Example-Job-1:
     runs-on: ubuntu-20.04
     steps:
+      - name: Get files first
+        uses: actions/checkout@v2
       - name: Say Hello
         run: echo "Hello World!"
       - name: List Files
         run: ls -la /
-      - name: List Files in this branch
-        run: ls -la ${{ github.workspace }}
-        uses: actions/checkout@v2
       - name: Display vars
         run: env
-      - run: sleep 120
-      - run: sleep 120
-      - run: sleep 120
-  Example-Job-2:
-    runs-on: ubuntu-20.04
-    steps:
-      - run: sleep 30
-      - run: sleep 30
-      - run: sleep 30
