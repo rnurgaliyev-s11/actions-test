@@ -8,4 +8,17 @@ jobs:
       - name: Say Hello
         run: echo "Hello World!"
       - name: List Files
-        run: ls -la
+        run: ls -la /
+      - name: List Files in this branch
+        run: ls -la ${{ github.workspace }}
+      - name: Display vars
+        run: env
+      - run: sleep 120
+      - run: sleep 120
+      - run: sleep 120
+  Example-Job-2:
+    runs-on: ubuntu-20.04
+    steps:
+      - run: sleep 30
+      - run: sleep 30
+      - run: sleep 30
