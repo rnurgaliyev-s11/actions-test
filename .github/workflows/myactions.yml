@@ -1,4 +1,4 @@
-name: Test GitHub Actions
+name: Workflow set 1
 on:
   - push
 jobs:
