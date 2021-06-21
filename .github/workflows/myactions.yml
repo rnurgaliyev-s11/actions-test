@@ -11,5 +11,7 @@ jobs:
         run: echo "Hello World!"
       - name: List Files
         run: ls -la /
+      - name: List Files in repo
+        run: ls -la ${{ github.workspace }}
       - name: Display vars
         run: env
